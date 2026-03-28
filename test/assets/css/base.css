@@ -1,0 +1,71 @@
+/* Purpose: Global base styles for the static placement demo scaffold. */
+
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  --start-bg: #f3f4f6;
+  --start-text: #0f172a;
+  --start-muted: #64748b;
+  --start-button: #facc15;
+  --start-border: #111111;
+  --pretest-yellow: #ffd43b;
+  --pretest-border: #111111;
+  --pretest-bg: #f3f4f6;
+  --pretest-text: #111111;
+  --pretest-muted: #4b5563;
+  --pretest-white: #ffffff;
+  --section-bg: #f3f4f6;
+  --section-yellow: #ffd43b;
+  --section-border: #111111;
+  --question-bg: #f3f4f6;
+  --question-card: #ffffff;
+  --question-border: #111111;
+  --reading-yellow: #ffd43b;
+  --reading-border: #111111;
+  --reading-bg: #f3f4f6;
+  --reading-card: #ffffff;
+  --reading-choice-bg: #d9d9dc;
+  --reading-choice-card: #f4f4f1;
+  --reading-reorder-card: #fffdf4;
+  --reading-muted: #6b7280;
+  --reading-muted-strong: #5f6368;
+  --listening-yellow: #ffd84d;
+  --listening-border: #111111;
+  --listening-page: #eef0f4;
+  --listening-card: #fffdf7;
+  --listening-panel: #ffffff;
+  --listening-input: #fffdf4;
+  --listening-input-focus: #fff6c9;
+  --listening-muted: #666666;
+  --listening-hint: #64748b;
+  --hiw-page-bg: #d8d9de;
+  --hiw-panel-bg: #e8e5df;
+  --hiw-box-bg: #dedede;
+  --hiw-audio-bg: #d9d9d9;
+  --hiw-muted: #5f6a78;
+  --hiw-hover: #d8d2c4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+body.drag-lock {
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  cursor: grabbing;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

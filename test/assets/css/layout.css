@@ -1,0 +1,164 @@
+/* Purpose: Layout styles for the static placement demo scaffold. */
+
+.demo-shell {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.demo-header {
+  margin-bottom: 24px;
+}
+
+.demo-header h1 {
+  margin: 0 0 8px;
+}
+
+.demo-header p {
+  margin: 0;
+}
+
+.demo-app {
+  display: block;
+}
+
+body.is-start-screen .demo-shell {
+  width: min(1120px, calc(100% - 40px));
+  padding: 0;
+}
+
+body.is-start-screen .demo-header {
+  display: none;
+}
+
+body.is-start-screen .demo-app {
+  min-height: 100vh;
+}
+
+body.is-pretest-screen {
+  background: var(--pretest-bg);
+}
+
+body.is-pretest-screen .demo-shell {
+  width: min(768px, calc(100% - 48px));
+  padding: 0;
+}
+
+body.is-pretest-screen .demo-header {
+  display: none;
+}
+
+body.is-pretest-screen .demo-app {
+  min-height: 100vh;
+}
+
+body.is-vocab-intro-screen,
+body.is-vocab-question-screen {
+  background: var(--section-bg);
+}
+
+body.is-vocab-intro-screen .demo-shell,
+body.is-vocab-question-screen .demo-shell {
+  padding: 0;
+}
+
+body.is-vocab-intro-screen .demo-header,
+body.is-vocab-question-screen .demo-header {
+  display: none;
+}
+
+body.is-vocab-intro-screen .demo-app,
+body.is-vocab-question-screen .demo-app {
+  min-height: 100vh;
+}
+
+body.is-vocab-intro-screen .demo-shell {
+  width: min(800px, calc(100% - 40px));
+}
+
+body.is-vocab-question-screen .demo-shell {
+  width: min(760px, calc(100% - 40px));
+}
+
+body.is-reading-intro-screen {
+  background: var(--reading-bg);
+}
+
+body.is-reading-intro-screen .demo-shell {
+  width: min(800px, calc(100% - 40px));
+  padding: 0;
+}
+
+body.is-reading-intro-screen .demo-header {
+  display: none;
+}
+
+body.is-reading-intro-screen .demo-app {
+  min-height: 100vh;
+}
+
+body.is-reading-screen .demo-shell {
+  width: min(1120px, calc(100% - 40px));
+  padding: 0;
+}
+
+body.is-reading-screen .demo-header {
+  display: none;
+}
+
+body.is-reading-screen .demo-app {
+  min-height: 100vh;
+}
+
+body.is-reading-blank-screen,
+body.is-reading-reorder-screen {
+  background: var(--reading-bg);
+}
+
+body.is-reading-choice-screen {
+  background: var(--reading-choice-bg);
+}
+
+body.is-listening-intro-screen,
+body.is-listening-complete-screen {
+  background: var(--section-bg);
+}
+
+body.is-listening-intro-screen .demo-shell,
+body.is-listening-complete-screen .demo-shell {
+  width: min(800px, calc(100% - 40px));
+  padding: 0;
+}
+
+body.is-listening-intro-screen .demo-header,
+body.is-listening-complete-screen .demo-header,
+body.is-listening-fill-screen .demo-header,
+body.is-hiw-screen .demo-header,
+body.is-wfd-screen .demo-header {
+  display: none;
+}
+
+body.is-listening-intro-screen .demo-app,
+body.is-listening-complete-screen .demo-app,
+body.is-listening-fill-screen .demo-app,
+body.is-hiw-screen .demo-app,
+body.is-wfd-screen .demo-app {
+  min-height: 100vh;
+}
+
+body.is-listening-fill-screen,
+body.is-wfd-screen {
+  background: var(--listening-page);
+}
+
+body.is-hiw-screen {
+  background: var(--hiw-page-bg);
+}
+
+body.is-listening-fill-screen .demo-shell,
+body.is-hiw-screen .demo-shell,
+body.is-wfd-screen .demo-shell {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}

@@ -1,0 +1,928 @@
+/* Purpose: Screen-level placeholder styles for the static placement demo scaffold. */
+
+.screen {
+  display: block;
+}
+
+.start-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px 72px;
+  background: var(--start-bg);
+  color: var(--start-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.start-wrapper {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.start-title {
+  margin: 0 0 20px;
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.start-subtitle {
+  max-width: 720px;
+  margin: 0 0 42px;
+  font-size: 22px;
+  line-height: 1.7;
+  color: var(--start-muted);
+}
+
+.start-meta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.start-startSection {
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 28px;
+}
+
+.start-startInfo {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.start-subText {
+  max-width: 460px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--start-muted);
+}
+
+.start-startWrap {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pretest-shell {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--pretest-bg);
+  color: var(--pretest-text);
+}
+
+.pretest-container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pretest-card {
+  background: var(--pretest-white);
+  padding: 50px;
+  border: 2px solid var(--pretest-border);
+  border-radius: 18px;
+  box-shadow: 6px 6px 0 var(--pretest-border);
+}
+
+.pretest-step {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pretest-muted);
+}
+
+.pretest-title {
+  margin: 0 0 16px;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--pretest-text);
+}
+
+.pretest-desc {
+  max-width: 560px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--pretest-muted);
+}
+
+.pretest-inputWrap {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.pretest-fieldGroup {
+  display: grid;
+  gap: 8px;
+}
+
+.pretest-fieldLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pretest-text);
+}
+
+.pretest-errorText {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #b91c1c;
+}
+
+.pretest-optionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 34px;
+}
+
+.pretest-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section-intro-screen {
+  min-height: 100vh;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--section-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.section-intro-container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-intro-card {
+  padding: 50px;
+  border: 2px solid var(--section-border);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 6px 6px 0 var(--section-border);
+  text-align: center;
+}
+
+.reading-intro-screen {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--reading-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.reading-intro-container {
+  width: 100%;
+  max-width: 720px;
+  padding: 40px;
+  margin: 0 auto;
+  color: var(--reading-border);
+}
+
+.reading-intro-card {
+  background: #ffffff;
+  padding: 50px;
+  border: 2px solid var(--reading-border);
+  border-radius: 18px;
+  box-shadow: 6px 6px 0 var(--reading-border);
+  text-align: center;
+}
+
+.reading-intro-title {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--reading-border);
+}
+
+.reading-intro-desc {
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+.section-intro-title {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.section-intro-desc {
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+.vocab-question-screen {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--question-bg);
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.vocab-question-container {
+  width: 100%;
+  max-width: 720px;
+}
+
+.vocab-question-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.vocab-question-title {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.vocab-question-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.vocab-question-prompt {
+  margin: 0 0 28px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vocab-question-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.vocab-question-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.screen-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.blank-editor {
+  display: grid;
+  gap: 14px;
+}
+
+.reorder-panel {
+  display: grid;
+}
+
+.listening-transcript {
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+@media (max-width: 900px) {
+  .start-title {
+    font-size: 52px;
+  }
+
+  .start-subtitle {
+    font-size: 19px;
+  }
+
+  .start-startSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .start-startInfo {
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+  }
+
+  .start-subText {
+    max-width: none;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .start-page {
+    padding: 40px 16px 56px;
+  }
+
+  .start-wrapper {
+    padding: 24px;
+  }
+
+  .start-title {
+    font-size: 42px;
+  }
+
+  .start-subtitle {
+    margin-bottom: 34px;
+    font-size: 17px;
+  }
+
+  .start-meta {
+    gap: 14px;
+  }
+
+  .start-startSection {
+    gap: 20px;
+  }
+
+  .pretest-shell {
+    padding: 16px;
+  }
+
+  .pretest-card {
+    padding: 30px 24px;
+  }
+
+  .pretest-title {
+    font-size: 26px;
+  }
+
+  .pretest-desc {
+    font-size: 16px;
+  }
+
+  .section-intro-screen {
+    padding: 20px;
+  }
+
+  .section-intro-card {
+    padding: 30px 24px;
+  }
+
+  .section-intro-title {
+    font-size: 24px;
+  }
+
+  .section-intro-desc {
+    font-size: 16px;
+  }
+
+  .reading-intro-container {
+    padding: 20px;
+  }
+
+  .reading-intro-card {
+    padding: 30px 24px;
+  }
+
+  .reading-intro-title {
+    font-size: 24px;
+  }
+
+  .reading-intro-desc {
+    font-size: 16px;
+  }
+
+  .vocab-question-screen {
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .vocab-question-title {
+    font-size: 22px;
+  }
+
+  .vocab-question-subtitle {
+    font-size: 14px;
+  }
+
+  .vocab-question-prompt {
+    font-size: 20px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 720px) {
+  .action-bar {
+    align-items: stretch;
+  }
+
+  .action-bar__button {
+    width: 100%;
+  }
+
+  .reorder-item {
+    flex-direction: column;
+  }
+
+  .reorder-item__actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .pretest-optionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pretest-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vocab-question-options {
+    align-items: stretch;
+  }
+}
+
+.reading-blank-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: var(--reading-bg);
+  color: var(--reading-border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.reading-blank-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.reading-blank-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.reading-blank-title {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.reading-blank-subtitle {
+  color: var(--reading-muted);
+  font-size: 16px;
+}
+
+.reading-blank-layout {
+  display: block;
+}
+
+.reading-blank-panel {
+  display: block;
+}
+
+.reading-choice-screen {
+  min-height: 100vh;
+  background: var(--reading-choice-bg);
+  color: var(--reading-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.reading-choice-shell {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+}
+
+.reading-choice-question-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reading-reorder-screen {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--reading-bg);
+  color: var(--reading-border);
+  padding: 32px 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.reading-reorder-shell {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.reading-reorder-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.reading-reorder-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.reading-reorder-left-actions,
+.reading-reorder-right-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .reading-blank-layout {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .reading-choice-screen,
+  .reading-reorder-screen {
+    align-items: flex-start;
+  }
+
+  .reading-choice-shell {
+    padding: 16px 14px 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reading-blank-screen {
+    padding: 24px 12px 40px;
+  }
+
+  .reading-blank-title {
+    font-size: 24px;
+  }
+
+  .reading-blank-layout {
+    display: block;
+  }
+
+  .reading-choice-shell {
+    padding: 16px 12px 40px;
+  }
+
+  .reading-reorder-screen {
+    padding: 20px 12px;
+  }
+
+  .reading-reorder-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .reading-reorder-left-actions,
+  .reading-reorder-right-actions {
+    width: 100%;
+  }
+}
+
+.listening-empty-page,
+.listening-fill-page,
+.listening-wfd-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 14px;
+  background: var(--listening-page);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--listening-border);
+}
+
+.listening-fill-shell,
+.listening-wfd-container {
+  width: 100%;
+  max-width: 760px;
+}
+
+.listening-empty-card,
+.listening-fill-card,
+.listening-wfd-container {
+  background: var(--listening-card);
+  border: 2px solid var(--listening-border);
+  border-radius: 22px;
+  box-shadow: 5px 5px 0 var(--listening-border);
+  box-sizing: border-box;
+}
+
+.listening-empty-card {
+  width: 100%;
+  max-width: 560px;
+  padding: 24px;
+}
+
+.listening-fill-card,
+.listening-wfd-container {
+  padding: 24px;
+}
+
+.listening-fill-title,
+.listening-wfd-title {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--listening-border);
+}
+
+.listening-fill-intro,
+.listening-wfd-subtitle {
+  margin: 0 0 18px;
+  color: var(--listening-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.listening-fill-audioBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid var(--listening-border);
+  border-radius: 16px;
+  background: var(--listening-panel);
+  box-shadow: 4px 4px 0 var(--listening-border);
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.listening-fill-audioArea {
+  flex: 1;
+  min-width: 0;
+}
+
+.listening-fill-passage {
+  border: 2px solid var(--listening-border);
+  border-radius: 18px;
+  background: var(--listening-panel);
+  box-shadow: 4px 4px 0 var(--listening-border);
+  padding: 20px;
+  font-size: 17px;
+  line-height: 2;
+  color: var(--listening-border);
+  word-break: break-word;
+}
+
+.listening-fill-actions,
+.listening-wfd-cta {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.listening-hiw-screen {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--hiw-page-bg);
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.listening-hiw-shell {
+  width: 100%;
+  max-width: 1120px;
+  background: var(--hiw-panel-bg);
+  border: 3px solid var(--listening-border);
+  border-radius: 28px;
+  box-shadow: 10px 10px 0 var(--listening-border);
+  padding: 32px 28px 28px;
+  box-sizing: border-box;
+}
+
+.listening-hiw-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.listening-hiw-title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--listening-border);
+  text-align: center;
+}
+
+.listening-hiw-subtitle {
+  margin: 12px auto 0;
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--hiw-muted);
+  text-align: center;
+}
+
+.listening-hiw-audioCard,
+.listening-hiw-textCard {
+  width: 100%;
+  background: var(--hiw-box-bg);
+  border: 2px solid var(--listening-border);
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+
+.listening-hiw-audioCard {
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.listening-hiw-textCard {
+  padding: 28px 30px;
+}
+
+.listening-hiw-passage {
+  font-size: 20px;
+  line-height: 2;
+  color: var(--listening-border);
+  text-align: center;
+  word-break: break-word;
+}
+
+.listening-hiw-bottomBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.listening-wfd-header {
+  margin-bottom: 18px;
+}
+
+.listening-wfd-block {
+  background: var(--listening-panel);
+  border: 2px solid var(--listening-border);
+  border-radius: 18px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.listening-wfd-blockTitle {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: var(--listening-border);
+}
+
+.listening-wfd-audioArea {
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .listening-hiw-screen {
+    padding: 24px 14px;
+  }
+
+  .listening-hiw-shell {
+    padding: 24px 20px 22px;
+  }
+
+  .listening-hiw-title {
+    font-size: 28px;
+  }
+
+  .listening-hiw-subtitle {
+    font-size: 15px;
+  }
+
+  .listening-hiw-passage {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 640px) {
+  .listening-empty-page,
+  .listening-fill-page,
+  .listening-wfd-wrapper {
+    padding: 16px;
+  }
+
+  .listening-fill-card,
+  .listening-wfd-container {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .listening-fill-passage {
+    font-size: 16px;
+    line-height: 1.95;
+    padding: 16px;
+  }
+
+  .listening-fill-actions,
+  .listening-wfd-cta {
+    justify-content: stretch;
+  }
+
+  .listening-hiw-screen {
+    padding: 18px 10px;
+    align-items: flex-start;
+  }
+
+  .listening-hiw-shell {
+    padding: 20px 14px 18px;
+    border-radius: 22px;
+    box-shadow: 7px 7px 0 var(--listening-border);
+  }
+
+  .listening-hiw-header {
+    margin-bottom: 20px;
+  }
+
+  .listening-hiw-title {
+    font-size: 24px;
+  }
+
+  .listening-hiw-subtitle {
+    font-size: 14px;
+  }
+
+  .listening-hiw-audioCard,
+  .listening-hiw-textCard {
+    border-radius: 20px;
+  }
+
+  .listening-hiw-audioCard {
+    padding: 16px;
+    margin-bottom: 18px;
+  }
+
+  .listening-hiw-textCard {
+    padding: 18px 16px;
+  }
+
+  .listening-hiw-passage {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .listening-hiw-bottomBar {
+    margin-top: 20px;
+  }
+
+  .listening-wfd-block {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .listening-wfd-blockTitle {
+    font-size: 16px;
+  }
+}
