@@ -387,7 +387,7 @@ listening: {
       type: "listening-fill-in-the-blanks",
       difficulty: "C",
       prompt: "请听录音，并在每个空格中填写缺失的单词。",
-      audioUrl: "/audio/FIB1.mp3",
+      audioUrl: "assets/audio/FIB1.mp3",
       transcript: `
 It isn't necessary to have a [blank-1] knowledge of, say, the intricacies of counterpoint, or even to be able to read music to understand it. Usually, getting the point of a piece of music, its emotional and dramatic [blank-2], is immediate or simply requires you to become more [blank-3] with it. Of course, prolonged study of music and its [blank-4], as in any other field, will increase your understanding, but not necessarily your enjoyment.
 
@@ -406,7 +406,7 @@ Now, I realize that it can require a good deal of willingness on our part to ris
   type: "listening-fill-in-the-blanks",
   difficulty: "A",
   prompt: "请听录音，并在每个空格中填写缺失的单词。",
-  audioUrl: "/audio/FIB2.mp3",
+  audioUrl: "assets/audio/FIB2.mp3",
   transcript: `
 Financial markets swung wildly yesterday in the frenzied trading market by further selling of [blank-1] and fears about an unraveling of the global carry trade. At the same time, trading in the US and European credit markets were exceptionally [blank-2] for a third consecutive day. London trading was marked by particularly wild [blank-3] in the prices of credit derivatives, used to ensure investors against [blank-4] defaults.
 `,
@@ -422,7 +422,7 @@ Financial markets swung wildly yesterday in the frenzied trading market by furth
   type: "listening-fill-in-the-blanks",
   difficulty: "A",
   prompt: "请听录音，并在每个空格中填写缺失的单词。",
-  audioUrl: "/audio/FIB3.mp3",
+  audioUrl: "assets/audio/FIB3.mp3",
   transcript: `
 To be honest, the biggest problem for most undergraduate students, in terms of academic writing, is not only adapting to a far more [blank-1] and formal style, but also learning how to ascertain the difference between important, [blank-2] information and unnecessary, or even irrelevant [blank-3]. In my experience, I would say it takes students their first year, if not longer, to [blank-4] what is required and to start to implement those requirements in their writing. What they really should be doing, if they are struggling with written [blank-5], is to seek help from the [blank-6] support services which are available at the University.
 `,
@@ -443,7 +443,7 @@ To be honest, the biggest problem for most undergraduate students, in terms of a
     difficulty: "B",
     prompt:
       "请听录音，并点击与录音内容不一致的单词。",
-    audioUrl: "/audio/HIW1.mp3",
+    audioUrl: "assets/audio/HIW1.mp3",
     transcript: `
 For some people, this presentation may seem far-fetched, but ending poverty is both ethically necessary and actually feasible. All of us must play a role in making it happen. All human beings want, and have a way to live in dignity, to determine our own destinies, and to be respected by other, by other people. Despite the universality of three rights, our capacities to fulfill them vary enormously, and no divining line is more profound in influencing the quality of our lives than the gulf between poverty and prosperity.
 `,
@@ -461,7 +461,7 @@ For some people, this presentation may seem far-fetched, but ending poverty is b
   difficulty: "C",
   prompt:
     "请听录音，并点击与录音内容不一致的单词。",
-  audioUrl: "/audio/HIW2.mp3",
+  audioUrl: "assets/audio/HIW2.mp3",
   transcript: `
 The idea is that we divide the ward – the patients if you like – and the nurses into three different teams, which we call lively nursing teams. And in those teams we then have the primary nurse which is myself, associate nurses which might tend to be D grade nurses, and health care officials, and you're all in one team together. The idea is that you would hopefully work as a team in co-ordinating the care for the patients who come in under your care as in the red team. In our teams we have eight patients each. The idea would be that I would always prescribe the care or plan the care, for those patients. In reality, it doesn't always work like that and besides which the associate nurses that are in the teams have those skills anyway from their upgrading.
 `,
@@ -479,7 +479,7 @@ The idea is that we divide the ward – the patients if you like – and the nur
   difficulty: "A",
   prompt:
     "请听录音，并点击与录音内容不一致的单词。",
-  audioUrl: "/audio/HIW3.mp3",
+  audioUrl: "assets/audio/HIW3.mp3",
   transcript: `
 French, on the other hand, is a highly gentrified language, with the Parisian accent setting the standard for the world. If other French-speaking political abilities had risen to rival France, the situation might be dissident. If for instance, Quebec had remained a separate entity, or if Haiti had been a larger country, then perhaps other French dialects might have become more accepted.
 `,
@@ -498,7 +498,7 @@ French, on the other hand, is a highly gentrified language, with the Parisian ac
   prompt: "请准确输入你所听到的句子。",
   transcript: "A group meeting will be held by tomorrow in the library conference room",
   expectedText: "A group meeting will be held by tomorrow in the library conference room",
-  audioUrl: "/audio/001.mp3",
+  audioUrl: "assets/audio/001.mp3",
 },
 {
   id: "wfdA2",
@@ -507,7 +507,7 @@ French, on the other hand, is a highly gentrified language, with the Parisian ac
   prompt: "请准确输入你所听到的句子。",
   transcript: "You can make an appointment to meet the librarian",
   expectedText: "You can make an appointment to meet the librarian",
-  audioUrl: "/audio/005.mp3",
+  audioUrl: "assets/audio/005.mp3",
 },
 {
   id: "wfdB1",
@@ -516,7 +516,7 @@ French, on the other hand, is a highly gentrified language, with the Parisian ac
   prompt: "请准确输入你所听到的句子。",
   transcript: "We encourage students to complete their applications before the deadline",
   expectedText: "We encourage students to complete their applications before the deadline",
-  audioUrl: "/audio/174.mp3",
+  audioUrl: "assets/audio/174.mp3",
 },
 {
   id: "wfdC1",
@@ -525,7 +525,7 @@ French, on the other hand, is a highly gentrified language, with the Parisian ac
   prompt: "请准确输入你所听到的句子。",
   transcript: "While some people regard it as reforming zeal, others regard it as recklessness",
   expectedText: "While some people regard it as reforming zeal, others regard it as recklessness",
-  audioUrl: "/audio/171.mp3",
+  audioUrl: "assets/audio/171.mp3",
 }
 ],
 }
