@@ -110,9 +110,9 @@
   }
 
   function getSectionName(section) {
-    if (section === "foundation") return "Vocabulary Foundation";
-    if (section === "reading") return "Reading";
-    return "Listening";
+    if (section === "foundation") return "基础稳定度";
+    if (section === "reading") return "阅读处理";
+    return "听力识别";
   }
 
   function getCopy(section, pattern) {
@@ -121,51 +121,51 @@
     switch (pattern) {
       case "unstable":
         return {
-          title: name + " is unstable",
-          description: "Easy items are weak but there are scattered hits at higher levels, so performance is not stable yet.",
-          suggestion: "Stabilize the easiest layer first before pushing harder tasks."
+          title: name + "表现不稳定",
+          description: "低难度题目表现偏弱，但在更高难度层又出现零散命中，整体稳定性还不足。",
+          suggestion: "建议先把最基础的一层稳定下来，再逐步推进更高难度任务。"
         };
       case "all-low":
         return {
-          title: name + " is broadly weak",
-          description: "Most difficulty layers are currently below the expected level, not just one isolated skill.",
-          suggestion: "Rebuild the full section foundation step by step."
+          title: name + "整体偏弱",
+          description: "当前多个难度层级都低于预期，并非只是某一个单点能力不足。",
+          suggestion: "建议：从基础开始，分阶段重建这一部分的能力。"
         };
       case "foundation-weak":
         return {
-          title: name + " has a weak base",
-          description: "The lowest layer is already struggling, which limits the rest of the section.",
-          suggestion: "Prioritize the most basic question patterns first."
+          title: name + "基础层偏弱",
+          description: "最基础的能力层已经出现明显短板，这会限制后续更高层级的发挥。",
+          suggestion: "建议优先补强最基础、最常见的题型与能力点。"
         };
       case "transition-block":
         return {
-          title: name + " drops at mid and high levels",
-          description: "Basic performance is present, but accuracy falls once difficulty increases.",
-          suggestion: "Practice the transition from simple control to longer or more complex tasks."
+          title: name + "在中高难度出现断层",
+          description: "基础表现已经具备，但一旦难度上升，正确率就明显下滑。",
+          suggestion: "建议重点训练从基础控制到更长、更复杂任务之间的过渡能力。"
         };
       case "advanced-weak":
         return {
-          title: name + " needs advanced-layer work",
-          description: "Lower and mid difficulty are steadier, but advanced items are still a short board.",
-          suggestion: "Keep fundamentals stable and focus on harder material."
+          title: name + "高难层仍需加强",
+          description: "低难和中难层相对稳定，但高难度任务仍然是当前短板。",
+          suggestion: "建议在保持基础稳定的同时，集中突破更高难度材料。"
         };
       case "all-mid":
         return {
-          title: name + " is developing",
-          description: "There is usable ability across the section, but stability is still only moderate.",
-          suggestion: "Turn partial ability into consistent accuracy with targeted repetition."
+          title: name + "正在形成稳定能力",
+          description: "这一部分已经具备可用能力，但整体稳定度目前仍处于中等水平。",
+          suggestion: "建议通过更有针对性的重复训练，把阶段性能力转化为稳定正确率。"
         };
       case "strong":
         return {
-          title: name + " is strong",
-          description: "Performance is stable across active difficulty layers.",
-          suggestion: "Maintain consistency and keep pushing higher-level control."
+          title: name + "表现较强",
+          description: "当前活跃难度层的表现较为稳定。",
+          suggestion: "建议继续保持稳定性，并进一步提升更高层级的控制能力。"
         };
       default:
         return {
-          title: name + " is still developing",
-          description: "Some ability is visible, but the section has not fully stabilized yet.",
-          suggestion: "Keep building layer by layer and check which difficulty level breaks first."
+          title: name + "仍在发展中",
+          description: "当前已经出现一定能力迹象，但这一部分的整体表现还没有完全稳定下来。",
+          suggestion: "建议继续分层推进训练，优先找出最先出现断层的难度层。"
         };
     }
   }
