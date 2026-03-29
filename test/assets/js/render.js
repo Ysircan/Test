@@ -14,6 +14,10 @@
 
     state = demo.state.getState();
 
+    if (demo.helpers && typeof demo.helpers.setScaffoldPassthrough === "function") {
+      demo.helpers.setScaffoldPassthrough(state.step === "result");
+    }
+
     if (state.step === "start") {
       html = demo.screens.startScreen.render(state);
       root.innerHTML = html;

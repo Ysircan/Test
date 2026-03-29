@@ -44,6 +44,19 @@
   --hiw-audio-bg: #d9d9d9;
   --hiw-muted: #5f6a78;
   --hiw-hover: #d8d2c4;
+  --result-bg: #e6e7eb;
+  --result-panel: #f7f7f4;
+  --result-card: #fbfbf8;
+  --result-line: #111111;
+  --result-text: #111111;
+  --result-muted: #6b7280;
+  --result-blue: #24359b;
+  --result-yellow: #f4cf17;
+  --result-green-bg: #dfe9dc;
+  --result-green-text: #2f6b36;
+  --result-red: #d92d20;
+  --result-orange: #f59e0b;
+  --result-shadow: 8px 8px 0 #111111;
 }
 
 * {

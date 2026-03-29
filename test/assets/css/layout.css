@@ -162,3 +162,27 @@ body.is-wfd-screen .demo-shell {
   max-width: none;
   padding: 0;
 }
+
+body.is-result-screen {
+  background: var(--result-bg);
+}
+
+body.is-result-screen .demo-shell,
+.demo-shell.is-passthrough {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: contents;
+}
+
+body.is-result-screen .demo-header,
+.demo-header.is-passthrough {
+  display: none !important;
+}
+
+body.is-result-screen .demo-app,
+.demo-app.is-passthrough {
+  display: contents;
+  min-height: 0;
+}

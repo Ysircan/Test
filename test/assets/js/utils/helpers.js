@@ -115,6 +115,59 @@
       .replace(/\n/g, "<br />");
   }
 
+  function formatCalendarDate(value) {
+    var date = value instanceof Date ? value : new Date(value);
+    var months;
+
+    if (!(date instanceof Date) || isNaN(date.getTime())) {
+      return "";
+    }
+
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    return date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+  }
+
+  function formatExamLabel(examValue) {
+    if (examValue === "quick") {
+      return "Quick Exam";
+    }
+
+    if (examValue === "full") {
+      return "Full Exam";
+    }
+
+    return "Not Selected";
+  }
+
+  function getBandRangeFromScore(score) {
+    if (score < 15) return { min: 0, max: 15 };
+    if (score < 30) return { min: 15, max: 30 };
+    if (score < 42) return { min: 30, max: 42 };
+    if (score < 50) return { min: 42, max: 50 };
+    if (score < 58) return { min: 50, max: 58 };
+    return { min: 58, max: null };
+  }
+
+  function setScaffoldPassthrough(active) {
+    var passthrough = !!active;
+    var demoShell = document.querySelector(".demo-shell");
+    var demoHeader = document.querySelector(".demo-header");
+    var demoApp = document.getElementById("app");
+
+    if (demoShell) {
+      demoShell.classList.toggle("is-passthrough", passthrough);
+    }
+
+    if (demoHeader) {
+      demoHeader.classList.toggle("is-passthrough", passthrough);
+    }
+
+    if (demoApp) {
+      demoApp.classList.toggle("is-passthrough", passthrough);
+    }
+  }
+
   demo.helpers = {
     escapeHtml: escapeHtml,
     escapeAttribute: escapeAttribute,
@@ -126,6 +179,10 @@
     normalizeWordToken: normalizeWordToken,
     normalizeWordList: normalizeWordList,
     tokenizeTextWithWhitespace: tokenizeTextWithWhitespace,
-    whitespaceToHtml: whitespaceToHtml
+    whitespaceToHtml: whitespaceToHtml,
+    formatCalendarDate: formatCalendarDate,
+    formatExamLabel: formatExamLabel,
+    getBandRangeFromScore: getBandRangeFromScore,
+    setScaffoldPassthrough: setScaffoldPassthrough
   };
 }());
